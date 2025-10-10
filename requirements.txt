@@ -1,0 +1,8 @@
+langgraph
+langchain_community
+langchain_core
+wikipedia
+langchain-openai
+structlog
+langchain-google-genai
+langchain-groq
