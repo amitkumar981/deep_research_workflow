@@ -221,6 +221,7 @@ dependencies = [
     { name = "langchain-groq" },
     { name = "langchain-openai" },
     { name = "langgraph" },
+    { name = "python-dotenv" },
     { name = "structlog" },
     { name = "wikipedia" },
 ]
@@ -233,6 +234,7 @@ requires-dist = [
     { name = "langchain-groq", specifier = ">=0.3.8" },
     { name = "langchain-openai", specifier = ">=0.3.35" },
     { name = "langgraph", specifier = ">=0.6.10" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "structlog", specifier = ">=25.4.0" },
     { name = "wikipedia", specifier = ">=1.4.0" },
 ]
