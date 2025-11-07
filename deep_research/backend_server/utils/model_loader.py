@@ -7,12 +7,13 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGener
 from langchain_openai import ChatOpenAI
 from langchain_groq import ChatGroq
 from deep_research.backend_server.logger import GLOBAL_LOGGER as log
-from deep_research.backend_server.exception.custom_exception import ProductAssistantException
+from deep_research.backend_server.exception.custom_exception import ResearchAnalystException
 import asyncio
 
 
 class ApiKeyManager:
     def __init__(self):
+        load_dotenv(override=True)
         self.api_keys = {
             "OPENAI_API_KEY": os.getenv("OPENAI_API_KEY"),
             "GOOGLE_API_KEY": os.getenv("GOOGLE_API_KEY"),
@@ -64,7 +65,7 @@ class ModelLoader:
             )
         except Exception as e:
             log.error("Error loading embedding model", error=str(e))
-            raise ProductAssistantException("Failed to load embedding model", sys)
+            raise ResearchAnalystException("Failed to load embedding model", sys)
 
 
     def load_llm(self):

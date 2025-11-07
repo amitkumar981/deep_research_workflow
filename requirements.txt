@@ -1,8 +1,20 @@
 langgraph
 langchain_community
 langchain_core
+tavily-python
 wikipedia
 langchain-openai
-structlog
 langchain-google-genai
 langchain-groq
+structlog
+python-docx
+reportlab
+fastapi
+uvicorn
+jinja2
+httpx
+aiofiles
+sqlalchemy
+bcrypt
+passlib
+-e .
