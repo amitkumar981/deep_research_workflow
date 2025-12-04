@@ -17,4 +17,5 @@ aiofiles
 sqlalchemy
 bcrypt
 passlib
+python-multipart
 -e .

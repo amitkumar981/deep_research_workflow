@@ -11,3 +11,6 @@ wheels/
 
 .env
 logs
+archive
+
+generated_report/

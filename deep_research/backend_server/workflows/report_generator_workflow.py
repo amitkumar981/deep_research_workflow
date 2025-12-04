@@ -190,7 +190,7 @@ class AutonomousReportGenerator:
             base_name = f"{safe_topic.replace(' ', '_')}_{timestamp}"
 
             # Root folder (always inside project)
-            project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+            project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.."))
             root_dir = os.path.join(project_root, "generated_report")
 
             # Create subfolder for this report
